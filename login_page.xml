@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:text="@string/login"
+        android:gravity="center_horizontal"
+        android:textSize="33dp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:layout_below="@id/textView1"
+        android:paddingTop="28dp"
+        android:hint="@string/username"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/userName"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginBtn"
+        android:layout_below="@id/password"
+        android:text="@string/loginbutton"
+        android:textSize="28dp"
+        android:paddingTop="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupBtn"
+        android:layout_below="@id/loginBtn"
+        android:text="@string/signup"
+        android:textSize="28dp"
+        android:paddingTop="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotBtn"
+        android:layout_below="@id/signupBtn"
+        android:text="@string/forgot"
+        android:textSize="26dp"
+        android:paddingTop="15dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp"
+        android:text="@string/details"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@id/signUp"
+        android:hint="@string/name"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:paddingBottom="15dp"
+        android:textSize="28dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user"
+        android:layout_below="@id/name"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="28dp"
+        android:paddingBottom="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pwd"
+        android:textSize="28dp"
+        android:layout_below="@id/user"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:paddingBottom="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:id="@+id/conpwd"
+        android:layout_below="@id/pwd"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:paddingBottom="15dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileNo"
+        android:layout_below="@id/conpwd"
+        android:hint="@string/mobile"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="28dp"
+        android:inputType="phone"
+        android:paddingBottom="15dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpButton"
+        android:text="@string/signup"
+        android:layout_below="@id/mobileNo"
+        android:textSize="26dp"
+        />
+
+</RelativeLayout>
